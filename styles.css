@@ -1,6 +1,10 @@
-/*
- * Globals
- */
+/* Globals */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 
 /* Custom default button */
@@ -17,12 +21,6 @@
  */
 
 body {
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-}
-
-.cover-container {
-  max-width: 42em;
 }
 
 
@@ -47,4 +45,35 @@ body {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
+}
+
+/* Banner wrap */
+
+.banner-wrap {
+  background-image: url(./assets/SL-093020-35920-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.overlay {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 60%;
+  position: absolute;
+  top: 0;
+}
+
+.btn-custom {
+  background-color: black;
+  color: white;
+}
+
+.text-bg-white{
+  background-color: white;
 }
