@@ -31,28 +31,30 @@
     <!-- Custom styles for this template -->
     <link href="styles.css" rel="stylesheet" />
   </head>
-  <body class="bg-dark">
-    <div class="banner-wrap vh-100 vw-100 text-white">
-      <div class="overlay"></div>
-      <header class="px-5 p-3 text-white">
-        <div>
-          <h3 class="float-md-start text-center">Portfolio</h3>
-          <nav class="nav nav-masthead justify-content-center float-md-end">
+  <body class="bg-black">
+    <header class="px-5 p-2  text-white fixed-top">
+      <div>
+        <h3 class="float-md-start float-start text-center">Portfolio</h3>
+          <nav class="navbar navbar-expand-lg nav-masthead justify-content-center float-md-end ">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#about-us">About us</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </nav>
-        </div>
-      </header>
+      </div>
+    </header>
+    <div class="banner-wrap vh-100 vw-100 d-flex align-items-center justify-content-center text-white">
+      <div class="overlay"></div>
+      
       <main
         class="d-flex flex-column align-items-center justify-content-center h-75 text-center"
       >
         <h1 class="display-1">I am Kamohelo Mamaregane</h1>
-        <p class="lead">Fullstack Web Developer</p>
+        <span id="typed" class="lead fs-2 "></span>
       </main>
     </div>
 
-    <section>
+    <section id="about-us" class="pt-3">
         <div class="container p-5">
           <div class="card">
             <div class="card-body">
@@ -95,9 +97,9 @@
           </div>
         </div>
     </section>
-    <section>
+    <section id="projects" class="pt-2">
       <div class="container-sm p-5">
-        <h1 class="text-center "><mark class="bg-dark text-white">Projects</mark></h1>
+        <h1 class="text-center "><mark class="bg-black text-white">Projects</mark></h1>
         <div class="row">
           <div class="col-md-4">
             <div class="card mt-4">
@@ -164,7 +166,7 @@
         
       </div>
     </section>
-    <section>
+    <sectio id="contact">
       <div class="container p-5">
         <div class="card">
           <div class="card-boby px-5 p-3 text-center">
@@ -183,7 +185,7 @@
               <i class="bi bi-discord m-2"></i>
             </a>
             
-            <form>
+            <form class="mt-4">
               <div class="mb-3">
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email Address">
               </div>
@@ -202,5 +204,24 @@
         </div>
       </div>
     </section>
+    <footer class="bg-dark text-center text-white">
+      <div class="container p-3">
+        <p class="lead">Developed by Kamohelo Mamaregane</p>
+      </div>
+    </footer>
+    <script>
+      window.addEventListener("scroll", () => {
+        const header = document.querySelector("header")
+        header.classList.toggle("scrolling", window.scrollY > 0)
+      })
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#typed', {
+        strings: ['Fullstack', 'Web Developer'],
+        typeSpeed: 100,
+        loop: true
+      });
+    </script>
   </body>
 </html>

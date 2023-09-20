@@ -77,3 +77,13 @@ body {
 .text-bg-white{
   background-color: white;
 }
+
+.bg-black {
+  background: black;
+}
+
+.scrolling {
+  background: rgba(48, 48, 48, 0.4);
+  backdrop-filter: blur(10px);
+  transition: all 0.5s;
+}
