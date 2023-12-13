@@ -23,7 +23,7 @@ class App {
     // }
 
     navbarToggle($nav, $hamburgerMenu, $navButton){
-        if(window.screen.width < 390){
+        if(window.screen.width < 800){
             $nav.classList.add("d-none");
             $navButton.classList.remove("d-none");
         } else {
