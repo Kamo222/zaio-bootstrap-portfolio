@@ -16,6 +16,10 @@
       href="https://getbootstrap.com/docs/5.0/examples/cover/"
     />
 
+    <!-- Google icons -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <!-- Bootstrap core CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -30,17 +34,33 @@
 
     <!-- Custom styles for this template -->
     <link href="styles.css" rel="stylesheet" />
+    <link href="mobile-styles.css" rel="stylesheet" />
   </head>
   <body class="bg-black">
-    <header class="px-5 p-2  text-white fixed-top">
+    <header id="header" class="px-5 p-2  text-white fixed-top">
       <div class="align-items-center ">
         <h3 class="float-md-start float-start text-center">Portfolio</h3>
-          <nav class="navbar navbar-expand-lg nav-masthead justify-content-center float-md-end">
+          <nav id="nav" class="navbar navbar-expand-lg nav-masthead justify-content-center float-md-end">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
             <a class="nav-link" href="#about-us">About us</a>
             <a class="nav-link" href="#projects">Projects</a>
             <a class="nav-link" href="#contact">Contact</a>
           </nav>
+          <!-- Button trigger modal -->
+          <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Launch static backdrop modal
+          </button> -->
+
+          <span id="nav-button" class="material-symbols-outlined float-end pt-2 d-none">
+            menu
+          </span>
+          
+      </div>
+      <div class="hamburger-menu d-none">
+            <a class="menu-item" aria-current="page" href="#">Home</a>
+            <a class="menu-item" href="#about-us">About us</a>
+            <a class="menu-item" href="#projects">Projects</a>
+            <a class="menu-item" href="#contact">Contact</a>
       </div>
     </header>
     <div class="banner-wrap vh-100 vw-100 d-flex align-items-center justify-content-center text-white">
@@ -141,10 +161,10 @@
             <div class="card mt-4">
               <img src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png" class="card-img-top img-fluid p-md-3" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Netflix Landing Page</h5>
+                <h5 class="card-title">Blu Space Prototype</h5>
                 <p class="card-text">Built this with HTML and CSS</p>
-                <a href="#" class="btn btn-dark">View website</a>
-                <a href="#" class="btn btn-outline-dark"><i class="bi bi-code-slash"></i></a>
+                <a href="https://bluspace-prototype.netlify.app/" class="btn btn-dark">View website</a>
+                <a href="https://github.com/Kamo222/blu-space-prototype2" class="btn btn-outline-dark"><i class="bi bi-code-slash"></i></a>
               </div>
             </div>
             <div class="card mt-4">
@@ -219,5 +239,6 @@
         loop: true
       });
     </script>
+    <script src="App.js"></script>
   </body>
 </html>
